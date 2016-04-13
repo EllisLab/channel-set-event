@@ -1,0 +1,52 @@
+{
+    "label": "Contact",
+    "instructions": "",
+    "order": 3,
+    "columns": [
+        {
+            "type": "text",
+            "label": "Name",
+            "name": "name",
+            "instructions": "",
+            "required": "n",
+            "search": "n",
+            "settings": {
+                "field_maxl": "256",
+                "field_fmt": "none",
+                "field_text_direction": "ltr",
+                "field_content_type": "all",
+                "field_required": "n"
+            }
+        },
+        {
+            "type": "text",
+            "label": "Position",
+            "name": "position",
+            "instructions": "",
+            "required": "n",
+            "search": "n",
+            "settings": {
+                "field_maxl": "256",
+                "field_fmt": "none",
+                "field_text_direction": "ltr",
+                "field_content_type": "all",
+                "field_required": "n"
+            }
+        },
+        {
+            "type": "text",
+            "label": "Phone Number",
+            "name": "phone_number",
+            "instructions": "",
+            "required": "n",
+            "search": "n",
+            "settings": {
+                "field_maxl": "256",
+                "field_fmt": "none",
+                "field_text_direction": "ltr",
+                "field_content_type": "all",
+                "field_required": "n"
+            }
+        }
+    ]
+}

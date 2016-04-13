@@ -1,0 +1,23 @@
+{
+    "channels": [
+        {
+            "channel_title": "Event",
+            "status_group": "Default",
+            "field_group": "event",
+            "cat_groups": []
+        }
+    ],
+    "status_groups": [
+        {
+            "name": "Default",
+            "statuses": [
+                {
+                    "name": "Featured",
+                    "highlight": "66ccff"
+                }
+            ]
+        }
+    ],
+    "category_groups": [],
+    "upload_destinations": []
+}

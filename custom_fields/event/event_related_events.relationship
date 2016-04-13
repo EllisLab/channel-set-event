@@ -1,0 +1,12 @@
+{
+    "label": "Related Events",
+    "instructions": "",
+    "order": 4,
+    "settings": {
+        "expired": "y",
+        "future": "y",
+        "channels": [
+            "Event"
+        ]
+    }
+}

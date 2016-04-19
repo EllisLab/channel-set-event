@@ -15,19 +15,20 @@ script:
   - vendor/bin/jsonlint custom_fields/**/*
 
 before_deploy:
-  - rm -rf ./.*
-  - rm -rf composer.*
-  - rm -rf README.md
+  - rm -rf ./.editorconfig
+  - rm -rf ./.gitignore
+  - rm -rf ./.travis.yml
+  - rm -rf ./vendor/
+  - rm -rf ./composer.*
+  - rm -rf ./README.md
   - zip -r 'event' .
 
 deploy:
   provider: releases
   api_key:
-    secure: mksWi0izhEWhU3ANoUxPQ0joBy4yCwiu7Y17HjvxxVYDuVXM/73ie1zQ34AFCtts4FxNmwrT1tAxVksDa41k1a6x3paxfcT6PySletw4RB3T3OmxNO4HYsvmtSL4DVWw7ru5btlFTVMB+cClqAP3u+T+14QPOrYfYJWqz5ckf+w=
+    secure: F6DsjKJwO/cCWPZkvKc9aS8u4mP3Qe7Fim8CAgx0QWHXMfFwqX/qYvVKJ3+w1U5p0Y6lleLEvYpvPYILiJCHxbMKSR5GhhdavCDIQJcEYDR/X3kmF17MsRETsSeL5bG9QJ/iUOAmKL5Bvvb16ihyamN6LgsVpBy6CytSrp1/vKE23P89FADeO9lU2rG7EV4RFtXsF1hCDI/zLKM7+xn+AE2oJt1RNgA20pH0PLoc50NooFptXFxkWI2kTQIRy0ORAVUuEjObNwgCUgsP4cwFpIKdVJyY/n/V5/R0wpmPtTFc+bcNN1hnta0z9OS0KHTcqpouPbkv2MZkkzBqvbQT5NgqorRZ/e0YpMGn7U7PF4lKYZa6LwcuFpAwcQt03SvwoRoX5Hydjii5lgnMTyTZjA+ftLxyKGdjWbL6y4rt/zeArvFTTjHrFCVgwDDDeF6kVk9QmPelU8qG0PjHi5zwKxiR/NxmoLdejaDgLyKcjLIM2iFGtYQFdwauCiCGUHbfuRt40GpgTqHzlfwMVjqbiCOvt4y6D5AXuHS+WVJ4Hu66KKG1la9nNFeTrWh4AA7vMyhQPTlToqxtvWpZIKjcBnFa9bUfTz595yhMbG1eF2Sh7+3Q1mmS/VqyAowlbb9qi65OhyRyh42njXnQHnyIm0PACMFwd6V3mpxXd9oXE3Y=
   file: event.zip
-  skip_cleanup: true
   on:
-    repo: EllisLab/channel-set-event
     php: 7.0
     tags: true
-    condition: $TRAVIS_PULL_REQUEST = false
+    repo: EllisLab/channel-set-event
